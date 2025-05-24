@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Control Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1 class="dashboard-title">Control Dashboard</h1>
+            <p class="dashboard-subtitle">Sistema de Control Futurista v2.0</p>
+        </header>
+
+        <div class="control-grid">
+            <!-- Panel de Botones Circulares -->
+            <div class="control-panel">
+                <h3 class="panel-title">Controles Principales</h3>
+                <div class="circular-buttons">
+                    <button class="circular-btn" data-action="power">⚡</button>
+                    <button class="circular-btn" data-action="settings">⚙️</button>
+                    <button class="circular-btn" data-action="scan">🔍</button>
+                </div>
+                
+                <div class="toggle-container">
+                    <span>Sistema Principal</span>
+                    <div class="toggle-switch" id="mainToggle"></div>
+                </div>
+                
+                <div class="toggle-container">
+                    <span>Modo Automático</span>
+                    <div class="toggle-switch" id="autoToggle"></div>
+                </div>
+            </div>
+
+            <!-- Panel de Medidores -->
+            <div class="control-panel">
+                <h3 class="panel-title">Monitores</h3>
+                <div class="gauge-container">
+                    <div class="gauge-bg" id="powerGauge"></div>
+                    <div class="gauge-needle" id="powerNeedle"></div>
+                    <div class="gauge-center"></div>
+                </div>
+                <p style="text-align: center; margin-top: 10px;">Energía: <span id="powerValue">0</span>%</p>
+            </div>
+
+            <!-- Panel de Sliders -->
+            <div class="control-panel">
+                <h3 class="panel-title">Configuración</h3>
+                <div class="slider-container">
+                    <label class="slider-label">Velocidad: <span id="speedValue">50</span>%</label>
+                    <input type="range" class="slider" id="speedSlider" min="0" max="100" value="50" title="Velocidad">
+                </div>
+                
+                <div class="slider-container">
+                    <label class="slider-label">Temperatura: <span id="tempValue">25</span>°C</label>
+                    <input type="range" class="slider" id="tempSlider" min="0" max="100" value="25" title="Temperatura">
+                </div>
+                
+                <div class="slider-container">
+                    <label class="slider-label">Volumen: <span id="volumeValue">75</span>%</label>
+                    <input type="range" class="slider" id="volumeSlider" min="0" max="100" value="75" title="Volumen">
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel de Estado 3D -->
+        <div class="status-panel">
+            <h3 class="panel-title">Estado del Sistema</h3>
+            <div class="status-grid">
+                <div class="status-item">
+                    <span class="status-value" id="cpuStatus">45%</span>
+                    <span class="status-label">CPU</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-value" id="memoryStatus">67%</span>
+                    <span class="status-label">Memoria</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-value" id="networkStatus">98%</span>
+                    <span class="status-label">Red</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-value" id="storageStatus">23%</span>
+                    <span class="status-label">Almacenamiento</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <p class="footer-text">Creado con ❤️ por</p>
+                <a href="https://femcodersclub.com" target="_blank" rel="noopener" class="footer-link">
+                    FemCoders Club
+                </a>
+                <p class="footer-text" style="margin-top: 5px; font-size: 0.8rem;">
+                    Comunidad Líder de Mujeres en Tecnología
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
