@@ -1,5 +1,9 @@
 # 🚀 Dashboard de Control Futurista
 
+> 📚 **Este proyecto fue creado como parte del post técnico:**  
+> [Domina las Transformaciones y Transiciones CSS 2D/3D](https://www.femcodersclub.com/recursos/css/transiciones-transformaciones) publicado en **FemCoders Club**.  
+> Te recomendamos leerlo para entender cómo aplicar cada técnica paso a paso.
+
 Un dashboard interactivo construido con **HTML5**, **CSS3** y **JavaScript vanilla** que demuestra el poder de las **transformaciones CSS 2D y 3D** para crear interfaces futuristas e inmersivas.
 
 ![Dashboard Preview](/dashboard.gif)
